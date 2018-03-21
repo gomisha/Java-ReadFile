@@ -5,7 +5,6 @@ import java.io.IOException;
 
 public class ReadFile_FileInputStream {
 	public static void main(String [] pArgs) throws FileNotFoundException, IOException {
-		System.out.println("hello ReadFile_FileInputStream");
 		System.out.println("javaVersion=" + System.getProperty("java.version"));
 
 		String fileName = "sample1.txt";
@@ -25,6 +24,5 @@ public class ReadFile_FileInputStream {
 			long elapsedTime = stopTime - startTime;
 			System.out.println("elapsedTime=" + elapsedTime);
 		}
-
 	}
 }
