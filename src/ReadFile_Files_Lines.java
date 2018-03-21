@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.util.stream.Stream;
 
-public class ReadFile_Lines {
+public class ReadFile_Files_Lines {
 
 	public static void main(String[] pArgs) throws IOException {
 		System.out.println("javaVersion=" + System.getProperty("java.version"));

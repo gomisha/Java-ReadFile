@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class ReadFile_Scanner {
+public class ReadFile_Scanner_NextLine {
 	public static void main(String [] pArgs) throws FileNotFoundException {
 		System.out.println("javaVersion=" + System.getProperty("java.version"));
 

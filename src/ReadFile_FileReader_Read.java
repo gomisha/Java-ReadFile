@@ -1,19 +1,19 @@
-import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class ReadFile_BufferedFileReader {
-	public static void main(String [] args) throws IOException {
+public class ReadFile_FileReader_Read {
+	public static void main(String [] pArgs) throws IOException {
 		System.out.println("javaVersion=" + System.getProperty("java.version"));
 
 		String fileName = "sample1.txt";
-		FileReader fileReader = new FileReader(fileName);
 		
-		try (BufferedReader bufferedReader = new BufferedReader(fileReader)) {
+		try (FileReader fileReader = new FileReader(fileName);) {
 			long startTime = System.currentTimeMillis();
-			String line;
-			while((line = bufferedReader.readLine()) != null) {
-				//System.out.println(line);
+			int singleCharInt;
+			char singleChar;
+			while((singleCharInt = fileReader.read()) != -1) {
+				singleChar = (char) singleCharInt;
+				//System.out.println(singleChar);
 			}
 			long stopTime = System.currentTimeMillis();
 			
@@ -22,3 +22,4 @@ public class ReadFile_BufferedFileReader {
 		}
 	}
 }
+
