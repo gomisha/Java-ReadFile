@@ -10,19 +10,19 @@ public class ReadFile_Guava_Files_ReadLines {
 	public static void main(String[] args) throws IOException {
 		System.out.println("javaVersion=" + System.getProperty("java.version"));
 
-		String fileName = "sample1.txt";
+		String fileName = "c:\\temp\\2.sample-10KB.txt";
 		File file = new File(fileName);
 
 		long startTime = System.currentTimeMillis();
 		
 		List<String> fileLinesList = Files.readLines(file, Charsets.UTF_8);
 		
+		for(String line : fileLinesList) {
+			System.out.println(line);
+		}
+
 		long stopTime = System.currentTimeMillis();
-
-//		for(String line : fileLinesList) {
-//			System.out.println(line);
-//		}
-
+		
 		long elapsedTime = stopTime - startTime;
 		System.out.println("elapsedTime=" + elapsedTime);
 	}
