@@ -10,8 +10,7 @@ public class ReadFile_FileReader_Read_Encoding {
 		FileInputStream fileInputStream = new FileInputStream(fileName); 
 		
 		//specify UTF-8 encoding explicitly
-		try (InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream, "UTF-8");) {
-		
+		try (InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream, "UTF-8")) {
 			long startTime = System.currentTimeMillis();
 			int singleCharInt;
 			char singleChar;
