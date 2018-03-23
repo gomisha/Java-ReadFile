@@ -7,7 +7,7 @@ public class ReadFile_Files_ReadAllLines {
 	public static void main(String [] pArgs) throws IOException {
 		System.out.println("javaVersion=" + System.getProperty("java.version"));
 
-		String fileName = "sample1.txt";
+		String fileName = "c:\\temp\\2.sample-10KB.txt";
 		File file = new File(fileName);
 
 		long startTime = System.currentTimeMillis();
@@ -21,5 +21,4 @@ public class ReadFile_Files_ReadAllLines {
 		long elapsedTime = stopTime - startTime;
 		System.out.println("elapsedTime=" + elapsedTime);
 	}
-
 }
