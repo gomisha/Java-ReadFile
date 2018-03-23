@@ -10,12 +10,12 @@ public class ReadFile_FileReader_Read_Encoding {
 		FileInputStream fileInputStream = new FileInputStream(fileName); 
 		
 		//specify UTF-8 encoding explicitly
-		try (InputStreamReader in = new InputStreamReader(fileInputStream, "UTF-8");) {
+		try (InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream, "UTF-8");) {
 		
 			long startTime = System.currentTimeMillis();
 			int singleCharInt;
 			char singleChar;
-			while((singleCharInt = in.read()) != -1) {
+			while((singleCharInt = inputStreamReader.read()) != -1) {
 				//comment out the following lines when running performance tests
 				singleChar = (char) singleCharInt;
 				System.out.print(singleChar); //display one character at a time
