@@ -12,9 +12,10 @@ public class ReadFile_Files_ReadAllBytes {
 		long startTime = System.currentTimeMillis();
 		byte [] fileBytes = Files.readAllBytes(file.toPath());
 		long stopTime = System.currentTimeMillis();
-
+		char singleChar;
 		for(byte b : fileBytes) {
-			System.out.print((char) b);
+			singleChar = (char) b;
+			System.out.print(singleChar);
 		}
 
 		long elapsedTime = stopTime - startTime;
